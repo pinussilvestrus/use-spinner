@@ -1,5 +1,7 @@
 import useSpinner from '..';
 
+import '../assets/use-spinner.css';
+
 const fn = async () => {
   await new Promise(resolve => setTimeout(() => {
     console.log('done.');
@@ -7,7 +9,9 @@ const fn = async () => {
   }, 2000));
 };
 
-const spinnedFn = useSpinner(fn);
+const spinnedFn = useSpinner(fn, {
+  container: 'body'
+});
 
 const btn = document.querySelector('.btn-exec');
 

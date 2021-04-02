@@ -2,7 +2,9 @@
   "name": "use-spinner",
   "version": "0.0.0",
   "description": "Add a simple loading spinner to your async JS calls - built for the browser.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "source": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/pinussilvestrus/use-spinner.git"
@@ -10,10 +12,15 @@
   "author": "Niklas Kiefer <niklas.kiefer@camunda.com (https://github.com/pinussilvestrus)>",
   "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "lint": "eslint .",
+    "all": "run-s lint build"
   },
   "keywords": [],
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^2.44.0",
     "eslint": "^7.23.0",
     "eslint-plugin-bpmn-io": "^0.12.0"
   }

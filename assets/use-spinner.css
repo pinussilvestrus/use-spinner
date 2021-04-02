@@ -1,0 +1,31 @@
+.us-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.us-container .us-spinner {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border: 2px solid #0072B5;
+  border-top-color: transparent;
+  animation: us-spinner-animation 1s linear infinite;
+  box-sizing: border-box;
+}
+  
+@keyframes us-spinner-animation {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
