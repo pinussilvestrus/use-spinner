@@ -1,0 +1,20 @@
+{
+  "name": "use-spinner",
+  "version": "0.0.0",
+  "description": "Add a simple loading spinner to your async JS calls - built for the browser.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pinussilvestrus/use-spinner.git"
+  },
+  "author": "Niklas Kiefer <niklas.kiefer@camunda.com (https://github.com/pinussilvestrus)>",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-plugin-bpmn-io": "^0.12.0"
+  }
+}
