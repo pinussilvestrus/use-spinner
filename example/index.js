@@ -1,6 +1,6 @@
-import useSpinner from '..';
+import useSpinner from 'use-spinner';
 
-import '../assets/use-spinner.css';
+import 'use-spinner/assets/use-spinner.css';
 
 const fn = async () => {
   await new Promise(resolve => setTimeout(() => {
