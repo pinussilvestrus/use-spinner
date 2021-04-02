@@ -1,6 +1,6 @@
 # use-spinner
 
-[![CI](https://github.com/pinussilvestrus/use-spinner/actions/workflows/CI.yml/badge.svg)](https://github.com/pinussilvestrus/use-spinner/actions/workflows/CI.yml)
+[![CI](https://github.com/pinussilvestrus/use-spinner/actions/workflows/CI.yml/badge.svg)](https://github.com/pinussilvestrus/use-spinner/actions/workflows/CI.yml) ![npm bundle size](https://img.shields.io/bundlephobia/min/use-spinner)
 
 Add a simple loading spinner to your async JS calls - built for the browser.
 
