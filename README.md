@@ -45,7 +45,7 @@ The API accepts a second argument configuring the wrapped function. This default
 }
 ```
 
-* *container*: the (String) selector to a DOM element that appends the loading spinner.
+* *container*: a selector or a DOM element that appends the loading spinner.
 
 ## License
 

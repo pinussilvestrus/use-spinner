@@ -1,6 +1,4 @@
-const _addSpinner = (container) => {
-  const parent = document.querySelector(container);
-
+const _addSpinner = (parent) => {
   const spinnerContainer = document.createElement('div');
   spinnerContainer.classList.add('us-container');
 
@@ -14,9 +12,8 @@ const _addSpinner = (container) => {
   return spinnerContainer;
 };
 
-const _cleanupSpinner = (element) => {
-  const body = document.querySelector('body');
-  body.removeChild(element);
+const _cleanupSpinner = (parent, element) => {
+  parent.removeChild(element);
 };
 
 
@@ -26,7 +23,7 @@ const _cleanupSpinner = (element) => {
  * Wraps defined (async) function to a new one adding a loading spinner while executing.
  *
  * @param {Function} fn - handler
- * @param {String} [options.container] - selector to parent container
+ * @param {String|DOMElement} [options.container] - selector or parent container
  *
  * @returns {Promise<Function>}
  */
@@ -40,6 +37,10 @@ const useSpinner = (fn, options = {}) => {
     container = 'body';
   }
 
+  if (typeof container === 'string') {
+    container = document.querySelector(container);
+  }
+
   return async (...args) => {
 
     // (1) add loading spinner to DOM
@@ -49,7 +50,7 @@ const useSpinner = (fn, options = {}) => {
     const result = await fn(...args);
 
     // (3) cleanup spinner
-    _cleanupSpinner(spinner);
+    _cleanupSpinner(container, spinner);
 
     // (4) return + finish
     return result;
