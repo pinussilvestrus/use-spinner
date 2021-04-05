@@ -35,6 +35,18 @@ await spinnedFn();
 
 ![Screencast](./docs/screencast.gif)
 
+## Options
+
+The API accepts a second argument configuring the wrapped function. This defaults to:
+
+```js
+{
+  container: 'body'
+}
+```
+
+* *container*: the (String) selector to a DOM element that appends the loading spinner.
+
 ## License
 
 MIT

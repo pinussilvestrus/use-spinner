@@ -22,6 +22,14 @@ const _cleanupSpinner = (element) => {
 
 // API ///////////////////////
 
+/**
+ * Wraps defined (async) function to a new one adding a loading spinner while executing.
+ *
+ * @param {Function} fn - handler
+ * @param {String} [options.container] - selector to parent container
+ *
+ * @returns {Promise<Function>}
+ */
 const useSpinner = (fn, options = {}) => {
 
   let {
