@@ -1,6 +1,6 @@
 # use-spinner
 
-[![CI](https://github.com/pinussilvestrus/use-spinner/actions/workflows/CI.yml/badge.svg)](https://github.com/pinussilvestrus/use-spinner/actions/workflows/CI.yml) ![npm bundle size](https://img.shields.io/bundlephobia/min/use-spinner)
+[![CI](https://github.com/pinussilvestrus/use-spinner/actions/workflows/CI.yml/badge.svg)](https://github.com/pinussilvestrus/use-spinner/actions/workflows/CI.yml) [![npm bundle size](https://img.shields.io/bundlephobia/minzip/use-spinner?label=package%20size)](https://bundlephobia.com/result?p=use-spinner@latest)
 
 Add a simple loading spinner to your async JS calls - built for the browser.
 
