@@ -30,3 +30,5 @@ jobs:
       run: npm ci
     - name: Build
       run: npm run all
+      env:
+        TEST_BROWSERS: ChromeHeadless,Firefox
