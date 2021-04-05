@@ -7,3 +7,5 @@ rollup.config.js
 docs
 .github
 index.js
+test
+karma.conf.js
