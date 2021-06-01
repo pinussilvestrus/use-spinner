@@ -26,6 +26,6 @@
     "webpack-cli": "^4.6.0"
   },
   "dependencies": {
-    "use-spinner": "^0.1.0"
+    "use-spinner": "^0.2.0"
   }
 }
