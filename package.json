@@ -21,7 +21,7 @@
   },
   "keywords": [],
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^19.0.1",
+    "@rollup/plugin-commonjs": "^20.0.0",
     "chai": "^4.3.4",
     "eslint": "^7.31.0",
     "eslint-plugin-bpmn-io": "^0.12.0",
