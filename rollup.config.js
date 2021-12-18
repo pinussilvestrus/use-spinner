@@ -5,7 +5,7 @@ import { terser } from 'rollup-plugin-terser';
 import pkg from './package.json';
 
 
-function pgl(plugins=[]) {
+function pgl(plugins = []) {
   return [
     commonjs(),
     terser(),
